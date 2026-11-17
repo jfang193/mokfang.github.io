@@ -33,6 +33,7 @@
 @media(max-width:700px){.seal-figure figcaption{bottom:auto;top:4%;width:220px}.wedding-links a{min-height:44px}.year-bottom{gap:8px}.arrow{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--line);border-radius:50%;color:var(--red)}.arrow-glyph{display:none}.arrow svg{display:block;width:15px;height:15px}.featured .arrow{color:var(--paper);border-color:currentColor}header{padding-top:20px;padding-bottom:16px}nav a{display:inline-flex;align-items:center;min-height:44px}.hero{grid-template-columns:1fr;gap:20px;padding:8px 0 28px}h1{letter-spacing:-1.5px;margin-bottom:18px}.seal-figure{grid-row:1;--seal-size:240px}.intro{max-width:100%}.signature{margin-bottom:0}.section-heading{display:block;margin-bottom:22px}.section-heading p{margin-top:10px}.year{min-height:155px;padding:16px}.year strong{margin:8px 0 12px;font-size:38px}.year.wedding{padding:20px;column-gap:20px}.wedding strong{margin:0;font-size:38px}.note{flex-direction:column;gap:12px;padding-bottom:30px}footer{flex-wrap:wrap;gap:12px;font-size:11px}.latest-video{padding:28px 0 32px}.archive{padding-top:28px;padding-bottom:32px}}
 @media(max-width:540px){.year.wedding{grid-template-columns:1fr;gap:8px}.wedding .wedding-links{grid-column:1;grid-row:3;margin-top:4px}.wedding strong{margin:0}.years{grid-template-columns:1fr;gap:10px}.year:not(.wedding){display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20px;row-gap:6px;min-height:104px;padding:16px}.year:not(.wedding) .tag{grid-column:1/-1}.year:not(.wedding) strong{grid-column:1;grid-row:2;margin:0;font-size:34px}.year:not(.wedding) .year-bottom{grid-column:2;grid-row:2;align-self:center;margin:0}.year:not(.wedding) .year-note{grid-column:1/-1;margin:0!important}.year.year-performance{row-gap:2px}.year.year-performance .year-note{grid-column:2;line-height:1.4}.year.wedding{padding:16px}.video-player{max-width:min(100%,60svh)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.year{transition:none}.year:hover{transform:none}}
+.closing-message{font-style:italic;text-align:right;font-size:14px;line-height:1.8;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -56,9 +57,10 @@
 <a class="year" href="https://youtube.com/shorts/4RT9vJyrJ4M" aria-label="Watch our 2023 recap video"><span class="tag">The archive</span><strong>2023</strong><span class="year-bottom">Watch our year<span class="arrow" aria-hidden="true"><span class="arrow-glyph">&nearr;</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span></a>
 </div>
 </section>
-<aside class="note"><p>The years go by.<br>The memories stay with us.</p><span>For our family and friends, near and far.<br>Thank you for being part of our story.</span></aside>
+<aside class="note"><p>The years go by.<br>The memories stay with us.</p></aside>
+
 </main>
-<footer><span>More to come...</span></footer>
+<footer><span class="closing-message">To our family and friends, near and far, thank you for being part of our story.</span></footer>
 <script>
 const sealFigure = document.querySelector('.seal-figure');
 const sealInfo = document.querySelector('.seal-info');
